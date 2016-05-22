@@ -209,6 +209,9 @@ public class Ranger extends HorizontalScrollView implements View.OnClickListener
         //Get inflater for view
         LayoutInflater inflater = LayoutInflater.from(mContext);
 
+        //Remove default view
+        mDaysContainer.removeAllViews();
+        
         //Add left padding
         mLeftSpace = new Space(mContext);
         mDaysContainer.addView(mLeftSpace);
